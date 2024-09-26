@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Company Directory Portal</title>
+        <link rel="stylesheet" href="CompanyPortalAssignment2.css">
+    </head>
+
+    <body>
+        <div class="main-container">
+            <h1>Company Directory Portal</h1>
+            <div class="form-container">
+                <h2>Employee Registration Form</h2>
+                    <form id="emp-reg">
+                        <div class="form-tab">
+                            <label>Full Name:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-tab">
+                            <label>Email:</label>
+                            <input type="email"required>
+                        </div>
+                        <div class="form-tab">
+                            <label>Department:</label>
+                        <select name="dept" form="emp-reg">
+                            <option value="it">IT</option>
+                            <option value="hr">HR</option>
+                            <option value="finance">Finance</option>
+                            <option value="marketing">Marketing</option>
+                        </select>
+                        </div>
+                        <div class="form-tab">
+                            <label>Employee ID:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-tab">
+                            <label>Profile Picture URL:</label>
+                            <input type="url" required>
+                        </div>
+
+                        
+                        <button class="register" type="submit">Register Employee</button>
+                        </form>
+            </div>
+            <div class="list-container">
+                <h2>Employee List</h2>
+                <ol>
+                    <li><a href="#">John Doe - john@example.com</a></li>
+                    <li><a href="#">Jane Smith - jane@example.com</a></li>
+                </ol>
+            </div>
+            <div class="emp-details">
+                <h2>Employee Details</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Employee ID</th>
+                            <th>Department</th>
+                            <th>Profile Picture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>12345</td>
+                            <td>IT</td>
+                            <td><img src="https://via.placeholder.com/50" alt="John's Profile"></td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>67890</td>
+                            <td>HR</td>
+                            <td><img src="https://via.placeholder.com/50" alt="Jane's Profile"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="location">
+                <h2>Company Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288.71220047915256!2d77.43659712640431!3d23.227919478993286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4269950177f5%3A0x4360e01493cb02c1!2sDezven%20software%20solution!5e0!3m2!1sen!2sin!4v1727342786891!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
