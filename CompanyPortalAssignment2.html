@@ -10,18 +10,18 @@
             <h1>Company Directory Portal</h1>
             <div class="form-container">
                 <h2>Employee Registration Form</h2>
-                    <form id="emp-reg">
+                    <form id="emp-reg" action="" method="get">
                         <div class="form-tab">
                             <label>Full Name:</label>
-                            <input type="text" required>
+                            <input type="text" name="fullname" required>
                         </div>
                         <div class="form-tab">
                             <label>Email:</label>
-                            <input type="email"required>
+                            <input type="email" name="email" required>
                         </div>
                         <div class="form-tab">
                             <label>Department:</label>
-                        <select name="dept" form="emp-reg">
+                        <select name="dept" form="emp-reg" >
                             <option value="it">IT</option>
                             <option value="hr">HR</option>
                             <option value="finance">Finance</option>
@@ -30,11 +30,11 @@
                         </div>
                         <div class="form-tab">
                             <label>Employee ID:</label>
-                            <input type="text" required>
+                            <input type="text"  name="empid"  required>
                         </div>
                         <div class="form-tab">
                             <label>Profile Picture URL:</label>
-                            <input type="url" required>
+                            <input type="url"  name="img" required>
                         </div>
                         <button class="register" type="submit">Register Employee</button>
                         </form>
